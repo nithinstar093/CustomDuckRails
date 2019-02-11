@@ -1,4 +1,5 @@
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require foundation
 //= require cocoon
