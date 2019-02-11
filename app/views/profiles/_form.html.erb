@@ -1,11 +1,15 @@
+<style>
+body {  background-image: url(/path/Downloads/1.jpeg); } 
+</style>
 <div class="row">
     <div clas="col-md-6">
         <div class = "panel panel-primary">
             <div class = "panel-heading">Fill in details</div>
                 <div class ="panel-body">
+                    <form class="form-group">
                     <%= simple_form_for @profile do |f| %>
 
-
+                        <body>
                         <div class="form-group">
                         <%= f.label :name %>
                         <%= f.text_field :name, required: true, placeholder: "Write your name" %>
@@ -40,6 +44,8 @@
                         </div>
 
                         <% end %>
+                        </body>
+                        </form>
                  </div>
             </div>
         </div>
@@ -50,6 +56,6 @@
 
     </div>    
 
-
+</form>
 
 

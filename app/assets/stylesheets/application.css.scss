@@ -4,5 +4,10 @@
  *= require_self
  //= require foundation_and_overrides
 */
+
+html
+{
+    background: url(.../images/1.jpeg);
+}
 @import "bootstrap-sprockets";
 @import "bootstrap";
