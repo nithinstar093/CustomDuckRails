@@ -4,17 +4,45 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : 'DuckRails' %></title>
+    <title><%= content_for?(:title) ? yield(:title) : 'Profiles' %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
+<style>
+body {
+  background-color: #e8f3f8
+} 
 
+h1 {
+
+font-size: 100px;
+color: steelblue;
+
+}
+
+form{
+  margin: 50px auto;
+  width: 320px;
+  color: steelblue;
+}
+
+input{
+  padding: 10px;
+  font-size: inherit;
+}
+class{
+  display: block;
+  margin-bottom: 25px;
+  width: 100%;
+  border: 2px black;
+}
+</style>
   <body>
-    <%= render 'shared/header' %>
-
+    
+    
     <div class="row">
       <div class="small-12 columns">
         <div class="body-content">
@@ -23,6 +51,6 @@
       </div>
     </div>
 
-    <%= render 'shared/footer' %>
+     
   </body>
 </html>

@@ -16,5 +16,16 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :profiles 
+    
+
+
+
   Duckrails::Router.load_mock_routes!
+
+
+
+  
+
+  
 end

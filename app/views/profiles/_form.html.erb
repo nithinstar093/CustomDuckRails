@@ -1,0 +1,38 @@
+<%= form_for @profile do |f| %>
+
+
+<div class="field">
+<%= f.label :name %>
+<%= f.text_field :name %>
+</div>
+
+<div class="field">
+<%= f.label :base_url %>
+<%= f.text_field :base_url %>
+</div>
+
+<div class="field">
+<%= f.label :auth_type%>
+<%= f.text_field :auth_type %>
+<%#= f.select :title, ['NONE','OAUTH1','OAUTH2','OAUTH3','OAUTH4'], :selected => 'NONE' %>
+
+</div>
+
+<div class="field">
+<%= f.label :default_user_name %>
+<%= f.text_field :default_user_name %>
+</div>
+
+<div class="field">
+<%= f.label :default_password %>
+<%= f.text_field :default_password %>
+</div>
+
+<br /> 
+
+<div class="actions">
+<%= f.submit "Submit" %>
+</div>
+
+<% end %>
+

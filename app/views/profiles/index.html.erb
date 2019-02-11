@@ -1,0 +1,29 @@
+<h2>Listing Profiles</h2>
+<br />
+<table border = 3, width = 100%>
+  <tr>
+    <th>Profile Name</th>
+    <th>Profile ID </th>
+    <th>Base_url</th>
+    <th>Auth_type</th>
+    <th>Edit</th>
+    <th>Delete</th>
+    
+  </tr>
+ 
+  <% @profiles.each do |profile| %>
+    <tr>
+      <td><%= profile.name %></td>
+      <td><%= profile.id %></td>
+      <td><%= profile.base_url %></td>
+      <td><%= profile.auth_type %></td>
+      
+      <td><%= link_to 'Edit', edit_profile_path(profile) %> <br/> </td>
+      <td><%= link_to 'Delete ', [profile],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "Create New Profile",new_profile_path %> <br/><br/>
