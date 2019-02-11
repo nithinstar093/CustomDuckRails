@@ -2,7 +2,13 @@
     <div clas="col-md-6">
         <div class = "panel-heading">Fill in details</div>
         <div vlass ="panel-body">
-        <%= simple_form_for @profile do |f| %>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+<%= simple_form_for @profile do |f| %>
 
 
 <div class="field">
@@ -17,7 +23,7 @@
 
 <div class="field">
 <%= f.label :auth_type%>
-<%= f.text_field :auth_type, collection: ["NONE","OOAUTH1","OOAUTH2","OOAUTH3"] %>
+<%= f.text_field :auth_type %>
 <%#= f.select :title, ['NONE','OAUTH1','OAUTH2','OAUTH3','OAUTH4'], :selected => 'NONE' %>
 
 </div>
@@ -39,12 +45,4 @@
 </div>
 
 <% end %>
-
-
-        </div>
-        </div>
-        </div>
-        </div>
-
-
 
