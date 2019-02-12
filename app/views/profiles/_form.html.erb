@@ -1,13 +1,15 @@
-<style>
-body {  background-image: url(/path/Downloads/1.jpeg); } 
-</style>
-<div class="row">
-    <div clas="col-md-6">
+</br></br>
+
+<span style="display:inline-block; width: 50%;">
+
+    <div class="col-md-33">
         <div class = "panel panel-primary">
             <div class = "panel-heading">Fill in details</div>
                 <div class ="panel-body">
-                    <form class="form-group">
-                    <%= simple_form_for @profile do |f| %>
+                    <div class="col-lg-4 col-lg-offset-4">
+                
+                    
+                    <%= form_for @profile do |f| %>
 
                         <body>
                         <div class="form-group">
@@ -47,15 +49,13 @@ body {  background-image: url(/path/Downloads/1.jpeg); }
                         </body>
                         </form>
                  </div>
+                 </div>
             </div>
         </div>
     
     </div>
+    </div>
 
-    
 
-    </div>    
-
-</form>
 
 

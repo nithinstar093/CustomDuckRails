@@ -4,13 +4,13 @@
 <center><h2>Listing Profiles</h2></center>
 </div>
 <center>
-<div class="row">
-    <div clas="col-md-6">
-        <div class ="panel-body">
-                    <table class="form-group">
+
+                    
     <div class = "panel-heading">
     <span style="display:inline-block; width: 30%;">
-    <table border = 2, width = 100%, height = 100, align ="center">
+    <table class="table table-striped table-hover">
+    
+      <thead class="thead-dark">
         <tr>
         <th>Profile Name</th>
         <th>Profile ID </th>
@@ -20,8 +20,9 @@
         <th>Delete</th>
         
         </tr>
+        </thead>
         </div>
-  
+  <tbody>
   <% @profiles.each do |profile| %>
     <tr>
       <td><%= profile.name %></td>
@@ -29,23 +30,30 @@
       <td><%= profile.base_url %></td>
       <td><%= profile.auth_type %></td>
       
-      <td><%= link_to 'Edit', edit_profile_path(profile), class: "btn-btn-success" %> <br/> </td>
-      <td><%= link_to 'Delete ', [profile],
+      <td class="actions">
+              <%= link_to edit_profile_path(profile),
+                          title: 'Edit profile',
+                          class: 'button tiny edit' do %>
+                <i class="fa fa-edit"></i>
+              <% end %>
+      <td><%= link_to profile_path(profile), 
                method: :delete,
-               data: { confirm: 'Are you sure?' } , class: "btn-btn-info" %></td>
+               data: { confirm: 'Are you sure?' } ,class: 'button tiny delete' do%>
+          <i class="fa fa-remove"></i>
+          <% end %>
     </tr>
+    </tbody>
    </span>
   <% end %>
 </table>
 
 </div>
 </div>
-</div>
-</div>
-</div>
-</center>
-<br>
 
+</center>
+
+
+<span style="display:inline-block; width: 136%;">
 <center><%= link_to "Create New Profile",new_profile_path , class: "button"%> <br/><br/></center>
 </div>
 </html>
