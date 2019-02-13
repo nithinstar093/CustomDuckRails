@@ -2,10 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.10'
 gem 'sass-rails', '~> 5.0'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'font-awesome-rails'
 gem 'foundation-rails', '~> 5.5.3.2'
 gem 'simple_form'
@@ -17,9 +16,6 @@ gem 'sqlite3', '~> 1.3.13'
 gem 'pg', '~> 0.15'
 gem 'mysql2'
 gem 'puma'
-gem 'rails-assets-bootstrap', '~> 4.0.0.alpha.6'
-gem 'rails-assets-jquery'
-gem  'rails-assets-tether'
 
 
 
@@ -46,4 +42,3 @@ group :test do
   gem 'selenium-webdriver', '2.53.0'
   gem 'table_flipper'
 end
-
