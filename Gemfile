@@ -16,6 +16,7 @@ gem 'sqlite3', '~> 1.3.13'
 gem 'pg', '~> 0.15'
 gem 'mysql2'
 gem 'puma'
+gem 'font-awesome-sass'
 
 
 
